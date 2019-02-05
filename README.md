@@ -1,10 +1,10 @@
 
-
 ![alt text](https://i.imgur.com/bPCpxoY.png)
 
 
 # ColorPicker Project
 ColorPicker is a cool modern Color picking tool made with C# Winform, 
+
 You can find a color on a gradient map and you can use it to display color by its Hexadecimal code, name, or RGB value.
 
 <p align="center">
@@ -17,6 +17,9 @@ You can find a color on a gradient map and you can use it to display color by it
   <a href="#user-content-contributing">Contributing</a> •
   <a href="#user-content-license">License</a>
 </p>
+
+## Preview
+![alt text](https://i.imgur.com/ob27Pc8.gif)
 
 ## Usage
 
@@ -34,12 +37,21 @@ or run the solution with visual studio and execute
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 Please make sure to update tests as appropriate.
 
 
-## ToDo:
-- [x] Start working on a template
-- [ ] Add a Data access layer dll project with basic input output procedure calls
+## Features:
+- [x] Select any color from the Rainbow selector and the fradient selector
+- [x] Adjust color with Red, Green, Blue and Alpha values
+- [x] Change color code from rgba to rgb (for css , alpha value is 0.0-1.0)
+- [x] Paste any color in the Color textbox, with its:
+  * Hexadecimal value (#4286f4)
+  * RGB/RGBA value ( rgb(66, 134, 244) )
+  * basic Color names (cyan,red blue, green, etc)
+- [x] Pick a color from the mouse Pointer, this works with multiple screens also
+- [x] Middle mouse click on the top panel would relocate the window in its initial location
+- [x] opening the application multiple times results in shaking the window of the initial window
 
 
 ## License
