@@ -1,4 +1,3 @@
-
 ![alt text](https://i.imgur.com/bPCpxoY.png)
 
 
@@ -13,8 +12,13 @@ You can find a color on a gradient map and you can use it to display color by it
 </p>
 
 <p align="center">
+
+  
+  <a href="#user-content-preview">Preview</a> •
   <a href="#user-content-usage">Usage</a> •
   <a href="#user-content-contributing">Contributing</a> •
+  <a href="#user-content-features">Features</a> •
+  <a href="#user-content-to-do">To-DO</a> •
   <a href="#user-content-license">License</a>
 </p>
 
@@ -52,6 +56,9 @@ Please make sure to update tests as appropriate.
 - [x] Pick a color from the mouse Pointer, this works with multiple screens also
 - [x] Middle mouse click on the top panel would relocate the window in its initial location
 - [x] opening the application multiple times results in shaking the window of the initial window
+
+## TO-DO:
+- [ ] change the gradient color wen selecting a color with the pick tool
 
 
 ## License
