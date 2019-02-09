@@ -8,3 +8,13 @@ C:\Dor\ColorPicker\ColorPicker\obj\Debug\ColorPicker.csproj.GenerateResource.cac
 C:\Dor\ColorPicker\ColorPicker\obj\Debug\ColorPicker.csproj.CoreCompileInputs.cache
 C:\Dor\ColorPicker\ColorPicker\obj\Debug\ColorPicker.exe
 C:\Dor\ColorPicker\ColorPicker\obj\Debug\ColorPicker.pdb
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\bin\Debug\ColorPicker.exe.config
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\bin\Debug\ColorPicker.exe
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\bin\Debug\ColorPicker.pdb
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.csprojAssemblyReference.cache
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.frmMain.resources
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.Properties.Resources.resources
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.csproj.GenerateResource.cache
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.csproj.CoreCompileInputs.cache
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.exe
+C:\Users\Dor\Desktop\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.pdb

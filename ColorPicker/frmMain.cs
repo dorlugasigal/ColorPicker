@@ -201,30 +201,51 @@ namespace ColorPicker
         }
         private void txtRGBColorCode_TextChanged(object sender, EventArgs e)
         {
+            bool colorFromTextName = false;
+            bool colorFromRGBcode = false;
+            if (string.IsNullOrEmpty(txtRGBColorCode.Text))
+            {
+                return;
+            }
             try
             {
                 Color color = ColorTranslator.FromHtml(txtRGBColorCode.Text);
+                m_chosenColor = color;
                 pnlColorDisplay.BackColor = color;
-                return;
+                colorFromTextName = true;
             }
             catch (Exception)
             {
             }
             try
             {
-                Match numbers = Regex.Match(txtRGBColorCode.Text, @"([\d]+[\.]?[\d]*)");
-                List<float> lst = new List<float>();
-                while (numbers.Length != 0)
+                if (!colorFromTextName)
                 {
-                    lst.Add(float.Parse(numbers.Value));
-                    numbers = numbers.NextMatch();
+
+                    Match numbers = Regex.Match(txtRGBColorCode.Text, @"([\d]+[\.]?[\d]*)");
+                    List<float> lst = new List<float>();
+                    while (numbers.Length != 0)
+                    {
+                        lst.Add(float.Parse(numbers.Value));
+                        numbers = numbers.NextMatch();
+                    }
+                    if (lst.Count == 3 || lst.Count == 4)
+                    {
+                        Color colorRead = Color.FromArgb((numbers.Length == 4 ? (int)(255 * lst[3]) : 255),
+                                                                (int)lst[0], (int)lst[1], (int)lst[2]);
+                        m_chosenColor = colorRead;
+                        pnlColorDisplay.BackColor = m_chosenColor;
+                        colorFromRGBcode = true;
+                    }
                 }
-                if (lst.Count != 3 && lst.Count != 4) { return; }
-                pnlColorDisplay.BackColor = Color.FromArgb((numbers.Length == 4 ? (int)(255 * lst[3]) : 255),
-                                                            (int)lst[0], (int)lst[1], (int)lst[2]);
             }
             catch (Exception)
             {
+            }
+            if (colorFromRGBcode || colorFromTextName)
+            {
+                pnlGradient.BackgroundImage = Gradient2D(pnlGradient.ClientRectangle, Color.White, Color.Black, m_chosenColor, Color.Black);
+                RefreshBitmaps();
             }
         }
         private void topPanel_MouseDown(object sender, MouseEventArgs e)
@@ -267,6 +288,9 @@ namespace ColorPicker
                                             trackBarRed.Value, trackBarGreen.Value, trackBarBlue.Value);
             pnlColorDisplay.BackColor = m_chosenColor;
             UpdateRGBCode(m_chosenColor);
+
+            pnlGradient.BackgroundImage = Gradient2D(pnlGradient.ClientRectangle, Color.White, Color.Black, m_chosenColor, Color.Black);
+            RefreshBitmaps();
         }
         private void btnExit_Click(object sender, EventArgs e) { Application.Exit(); }
 

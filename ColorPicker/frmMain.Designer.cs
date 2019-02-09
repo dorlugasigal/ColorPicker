@@ -70,8 +70,9 @@
             this.pbIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbIcon.Dock = System.Windows.Forms.DockStyle.Left;
             this.pbIcon.Location = new System.Drawing.Point(0, 0);
+            this.pbIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbIcon.Name = "pbIcon";
-            this.pbIcon.Size = new System.Drawing.Size(31, 32);
+            this.pbIcon.Size = new System.Drawing.Size(41, 39);
             this.pbIcon.TabIndex = 0;
             this.pbIcon.TabStop = false;
             // 
@@ -81,9 +82,10 @@
             this.lblAppName.AutoSize = true;
             this.lblAppName.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppName.ForeColor = System.Drawing.Color.White;
-            this.lblAppName.Location = new System.Drawing.Point(33, 6);
+            this.lblAppName.Location = new System.Drawing.Point(44, 7);
+            this.lblAppName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAppName.Name = "lblAppName";
-            this.lblAppName.Size = new System.Drawing.Size(108, 19);
+            this.lblAppName.Size = new System.Drawing.Size(131, 23);
             this.lblAppName.TabIndex = 1;
             this.lblAppName.Text = "ColorPicker";
             // 
@@ -94,9 +96,10 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Miriam", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(440, 0);
+            this.btnExit.Location = new System.Drawing.Point(586, 0);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(35, 32);
+            this.btnExit.Size = new System.Drawing.Size(47, 39);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -111,9 +114,10 @@
             this.btnCapturePixel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCapturePixel.Font = new System.Drawing.Font("Miriam", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnCapturePixel.ForeColor = System.Drawing.Color.White;
-            this.btnCapturePixel.Location = new System.Drawing.Point(405, 0);
+            this.btnCapturePixel.Location = new System.Drawing.Point(539, 0);
+            this.btnCapturePixel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCapturePixel.Name = "btnCapturePixel";
-            this.btnCapturePixel.Size = new System.Drawing.Size(35, 32);
+            this.btnCapturePixel.Size = new System.Drawing.Size(47, 39);
             this.btnCapturePixel.TabIndex = 3;
             this.btnCapturePixel.UseVisualStyleBackColor = true;
             this.btnCapturePixel.Click += new System.EventHandler(this.btnCapturePixel_Click);
@@ -128,8 +132,9 @@
             this.topPanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(475, 32);
+            this.topPanel.Size = new System.Drawing.Size(633, 39);
             this.topPanel.TabIndex = 0;
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topPanel_MouseDown);
             // 
@@ -138,7 +143,7 @@
             this.tableLayout.ColumnCount = 3;
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.92F));
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 84.08F));
-            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 96F));
+            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.tableLayout.Controls.Add(this.txtRGBColorCode, 1, 5);
             this.tableLayout.Controls.Add(this.txtAlpha, 2, 4);
             this.tableLayout.Controls.Add(this.txtBlue, 2, 3);
@@ -158,26 +163,28 @@
             this.tableLayout.Controls.Add(this.chkRGBA, 2, 5);
             this.tableLayout.Controls.Add(this.pnlColorDisplay, 0, 6);
             this.tableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayout.Location = new System.Drawing.Point(0, 32);
+            this.tableLayout.Location = new System.Drawing.Point(0, 39);
+            this.tableLayout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayout.Name = "tableLayout";
             this.tableLayout.RowCount = 7;
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 300F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayout.Size = new System.Drawing.Size(475, 507);
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 369F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayout.Size = new System.Drawing.Size(633, 624);
             this.tableLayout.TabIndex = 1;
             // 
             // txtRGBColorCode
             // 
             this.txtRGBColorCode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtRGBColorCode.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRGBColorCode.Location = new System.Drawing.Point(63, 423);
+            this.txtRGBColorCode.Location = new System.Drawing.Point(84, 521);
+            this.txtRGBColorCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRGBColorCode.Name = "txtRGBColorCode";
-            this.txtRGBColorCode.Size = new System.Drawing.Size(312, 26);
+            this.txtRGBColorCode.Size = new System.Drawing.Size(415, 31);
             this.txtRGBColorCode.TabIndex = 15;
             this.txtRGBColorCode.TextChanged += new System.EventHandler(this.txtRGBColorCode_TextChanged);
             // 
@@ -186,9 +193,10 @@
             this.txtAlpha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAlpha.Enabled = false;
             this.txtAlpha.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlpha.Location = new System.Drawing.Point(381, 393);
+            this.txtAlpha.Location = new System.Drawing.Point(507, 484);
+            this.txtAlpha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAlpha.Name = "txtAlpha";
-            this.txtAlpha.Size = new System.Drawing.Size(91, 26);
+            this.txtAlpha.Size = new System.Drawing.Size(122, 31);
             this.txtAlpha.TabIndex = 14;
             // 
             // txtBlue
@@ -196,9 +204,10 @@
             this.txtBlue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBlue.Enabled = false;
             this.txtBlue.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBlue.Location = new System.Drawing.Point(381, 363);
+            this.txtBlue.Location = new System.Drawing.Point(507, 447);
+            this.txtBlue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBlue.Name = "txtBlue";
-            this.txtBlue.Size = new System.Drawing.Size(91, 26);
+            this.txtBlue.Size = new System.Drawing.Size(122, 31);
             this.txtBlue.TabIndex = 13;
             // 
             // txtGreen
@@ -206,18 +215,20 @@
             this.txtGreen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtGreen.Enabled = false;
             this.txtGreen.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGreen.Location = new System.Drawing.Point(381, 333);
+            this.txtGreen.Location = new System.Drawing.Point(507, 410);
+            this.txtGreen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGreen.Name = "txtGreen";
-            this.txtGreen.Size = new System.Drawing.Size(91, 26);
+            this.txtGreen.Size = new System.Drawing.Size(122, 31);
             this.txtGreen.TabIndex = 12;
             // 
             // pnlRainbowColor
             // 
             this.pnlRainbowColor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlRainbowColor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlRainbowColor.Location = new System.Drawing.Point(381, 3);
+            this.pnlRainbowColor.Location = new System.Drawing.Point(507, 4);
+            this.pnlRainbowColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlRainbowColor.Name = "pnlRainbowColor";
-            this.pnlRainbowColor.Size = new System.Drawing.Size(91, 294);
+            this.pnlRainbowColor.Size = new System.Drawing.Size(122, 361);
             this.pnlRainbowColor.TabIndex = 0;
             this.pnlRainbowColor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlRainbowColor_Paint);
             this.pnlRainbowColor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlRainbowColor_MouseClick);
@@ -227,9 +238,10 @@
             this.tableLayout.SetColumnSpan(this.pnlGradient, 2);
             this.pnlGradient.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlGradient.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlGradient.Location = new System.Drawing.Point(3, 3);
+            this.pnlGradient.Location = new System.Drawing.Point(4, 4);
+            this.pnlGradient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlGradient.Name = "pnlGradient";
-            this.pnlGradient.Size = new System.Drawing.Size(372, 294);
+            this.pnlGradient.Size = new System.Drawing.Size(495, 361);
             this.pnlGradient.TabIndex = 1;
             this.pnlGradient.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGradient_Paint);
             this.pnlGradient.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlGradient_MouseClick);
@@ -240,9 +252,10 @@
             this.lblRed.AutoSize = true;
             this.lblRed.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRed.ForeColor = System.Drawing.Color.Red;
-            this.lblRed.Location = new System.Drawing.Point(3, 305);
+            this.lblRed.Location = new System.Drawing.Point(4, 376);
+            this.lblRed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRed.Name = "lblRed";
-            this.lblRed.Size = new System.Drawing.Size(36, 19);
+            this.lblRed.Size = new System.Drawing.Size(43, 23);
             this.lblRed.TabIndex = 2;
             this.lblRed.Text = "Red";
             // 
@@ -252,9 +265,10 @@
             this.lblGreen.AutoSize = true;
             this.lblGreen.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGreen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(165)))), ((int)(((byte)(37)))));
-            this.lblGreen.Location = new System.Drawing.Point(3, 335);
+            this.lblGreen.Location = new System.Drawing.Point(4, 413);
+            this.lblGreen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGreen.Name = "lblGreen";
-            this.lblGreen.Size = new System.Drawing.Size(54, 19);
+            this.lblGreen.Size = new System.Drawing.Size(65, 23);
             this.lblGreen.TabIndex = 3;
             this.lblGreen.Text = "Green";
             // 
@@ -264,9 +278,10 @@
             this.lblBlue.AutoSize = true;
             this.lblBlue.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBlue.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblBlue.Location = new System.Drawing.Point(3, 365);
+            this.lblBlue.Location = new System.Drawing.Point(4, 450);
+            this.lblBlue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBlue.Name = "lblBlue";
-            this.lblBlue.Size = new System.Drawing.Size(45, 19);
+            this.lblBlue.Size = new System.Drawing.Size(54, 23);
             this.lblBlue.TabIndex = 4;
             this.lblBlue.Text = "Blue";
             // 
@@ -276,9 +291,10 @@
             this.lblAlpha.AutoSize = true;
             this.lblAlpha.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAlpha.ForeColor = System.Drawing.Color.DimGray;
-            this.lblAlpha.Location = new System.Drawing.Point(3, 395);
+            this.lblAlpha.Location = new System.Drawing.Point(4, 487);
+            this.lblAlpha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAlpha.Name = "lblAlpha";
-            this.lblAlpha.Size = new System.Drawing.Size(54, 19);
+            this.lblAlpha.Size = new System.Drawing.Size(65, 23);
             this.lblAlpha.TabIndex = 5;
             this.lblAlpha.Text = "Alpha";
             // 
@@ -287,9 +303,10 @@
             this.lblColor.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblColor.AutoSize = true;
             this.lblColor.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor.Location = new System.Drawing.Point(3, 425);
+            this.lblColor.Location = new System.Drawing.Point(4, 524);
+            this.lblColor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(54, 19);
+            this.lblColor.Size = new System.Drawing.Size(65, 23);
             this.lblColor.TabIndex = 6;
             this.lblColor.Text = "Color";
             // 
@@ -297,10 +314,11 @@
             // 
             this.trackBarRed.BackColor = System.Drawing.Color.Red;
             this.trackBarRed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trackBarRed.Location = new System.Drawing.Point(63, 303);
+            this.trackBarRed.Location = new System.Drawing.Point(84, 373);
+            this.trackBarRed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBarRed.Maximum = 255;
             this.trackBarRed.Name = "trackBarRed";
-            this.trackBarRed.Size = new System.Drawing.Size(312, 24);
+            this.trackBarRed.Size = new System.Drawing.Size(415, 29);
             this.trackBarRed.TabIndex = 7;
             this.trackBarRed.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarRed.Scroll += new System.EventHandler(this.trackBars_Scroll);
@@ -309,10 +327,11 @@
             // 
             this.trackBarGreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(165)))), ((int)(((byte)(37)))));
             this.trackBarGreen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trackBarGreen.Location = new System.Drawing.Point(63, 333);
+            this.trackBarGreen.Location = new System.Drawing.Point(84, 410);
+            this.trackBarGreen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBarGreen.Maximum = 255;
             this.trackBarGreen.Name = "trackBarGreen";
-            this.trackBarGreen.Size = new System.Drawing.Size(312, 24);
+            this.trackBarGreen.Size = new System.Drawing.Size(415, 29);
             this.trackBarGreen.TabIndex = 8;
             this.trackBarGreen.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarGreen.Scroll += new System.EventHandler(this.trackBars_Scroll);
@@ -321,10 +340,11 @@
             // 
             this.trackBarBlue.BackColor = System.Drawing.SystemColors.HotTrack;
             this.trackBarBlue.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trackBarBlue.Location = new System.Drawing.Point(63, 363);
+            this.trackBarBlue.Location = new System.Drawing.Point(84, 447);
+            this.trackBarBlue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBarBlue.Maximum = 255;
             this.trackBarBlue.Name = "trackBarBlue";
-            this.trackBarBlue.Size = new System.Drawing.Size(312, 24);
+            this.trackBarBlue.Size = new System.Drawing.Size(415, 29);
             this.trackBarBlue.TabIndex = 9;
             this.trackBarBlue.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarBlue.Scroll += new System.EventHandler(this.trackBars_Scroll);
@@ -333,10 +353,11 @@
             // 
             this.trackBarAlpha.BackColor = System.Drawing.Color.DimGray;
             this.trackBarAlpha.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trackBarAlpha.Location = new System.Drawing.Point(63, 393);
+            this.trackBarAlpha.Location = new System.Drawing.Point(84, 484);
+            this.trackBarAlpha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBarAlpha.Maximum = 255;
             this.trackBarAlpha.Name = "trackBarAlpha";
-            this.trackBarAlpha.Size = new System.Drawing.Size(312, 24);
+            this.trackBarAlpha.Size = new System.Drawing.Size(415, 29);
             this.trackBarAlpha.TabIndex = 10;
             this.trackBarAlpha.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarAlpha.Scroll += new System.EventHandler(this.trackBars_Scroll);
@@ -346,18 +367,20 @@
             this.txtRed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtRed.Enabled = false;
             this.txtRed.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRed.Location = new System.Drawing.Point(381, 303);
+            this.txtRed.Location = new System.Drawing.Point(507, 373);
+            this.txtRed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRed.Name = "txtRed";
-            this.txtRed.Size = new System.Drawing.Size(91, 26);
+            this.txtRed.Size = new System.Drawing.Size(122, 31);
             this.txtRed.TabIndex = 11;
             // 
             // chkRGBA
             // 
             this.chkRGBA.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chkRGBA.AutoSize = true;
-            this.chkRGBA.Location = new System.Drawing.Point(381, 426);
+            this.chkRGBA.Location = new System.Drawing.Point(507, 525);
+            this.chkRGBA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkRGBA.Name = "chkRGBA";
-            this.chkRGBA.Size = new System.Drawing.Size(56, 17);
+            this.chkRGBA.Size = new System.Drawing.Size(69, 21);
             this.chkRGBA.TabIndex = 16;
             this.chkRGBA.Text = "RGBA";
             this.chkRGBA.UseVisualStyleBackColor = true;
@@ -369,9 +392,10 @@
             this.tableLayout.SetColumnSpan(this.pnlColorDisplay, 3);
             this.pnlColorDisplay.Controls.Add(this.lblPressEnter);
             this.pnlColorDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlColorDisplay.Location = new System.Drawing.Point(3, 453);
+            this.pnlColorDisplay.Location = new System.Drawing.Point(4, 558);
+            this.pnlColorDisplay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlColorDisplay.Name = "pnlColorDisplay";
-            this.pnlColorDisplay.Size = new System.Drawing.Size(469, 51);
+            this.pnlColorDisplay.Size = new System.Drawing.Size(625, 62);
             this.pnlColorDisplay.TabIndex = 17;
             // 
             // lblPressEnter
@@ -379,24 +403,26 @@
             this.lblPressEnter.AutoSize = true;
             this.lblPressEnter.Font = new System.Drawing.Font("Consolas", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPressEnter.ForeColor = System.Drawing.Color.White;
-            this.lblPressEnter.Location = new System.Drawing.Point(14, 4);
+            this.lblPressEnter.Location = new System.Drawing.Point(19, 5);
+            this.lblPressEnter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPressEnter.Name = "lblPressEnter";
-            this.lblPressEnter.Size = new System.Drawing.Size(439, 43);
+            this.lblPressEnter.Size = new System.Drawing.Size(570, 55);
             this.lblPressEnter.TabIndex = 0;
             this.lblPressEnter.Text = "Press Enter To Choose";
             this.lblPressEnter.Visible = false;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(475, 539);
+            this.ClientSize = new System.Drawing.Size(633, 663);
             this.Controls.Add(this.tableLayout);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";

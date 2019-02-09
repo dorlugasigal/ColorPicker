@@ -58,7 +58,7 @@ Please make sure to update tests as appropriate.
 - [x] opening the application multiple times results in shaking the window of the initial window
 
 ## TO-DO:
-- [ ] change the gradient color when selecting a color with the pick tool
+- [x] change the gradient color when selecting a color with the pick tool
 
 
 ## License
