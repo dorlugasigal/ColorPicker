@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ColorPicker
@@ -229,14 +226,15 @@ namespace ColorPicker
         }
         private void topPanel_MouseDown(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            switch (e.Button)
             {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-            else if (e.Button == MouseButtons.Middle)
-            {
-                this.Location = m_initPosition;
+                case MouseButtons.Left:
+                    ReleaseCapture();
+                    SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+                    break;
+                case MouseButtons.Middle:
+                    this.Location = m_initPosition;
+                    break;
             }
         }
         private void pnlRainbowColor_MouseClick(object sender, MouseEventArgs e)
@@ -306,7 +304,7 @@ namespace ColorPicker
                 var original = this.Location;
                 var rnd = new Random(1337);
                 const int shake_amplitude = 10;
-                for (int i = 0; i < 10; i++)
+                for (var i = 0; i < 10; i++)
                 {
                     this.Location = new Point(original.X + rnd.Next(-shake_amplitude, shake_amplitude), original.Y + rnd.Next(-shake_amplitude, shake_amplitude));
                     System.Threading.Thread.Sleep(20);
@@ -316,6 +314,64 @@ namespace ColorPicker
 
             }));
         }
+        private enum Brightness
+        {
+            ReallyDark,
+            Dark,
+            Bright,
+            ReallyBright
+        }
 
+
+        private void ChangeColorLightness(Brightness brightness)
+        {
+            int addition;
+            switch (brightness)
+            {
+                case Brightness.ReallyDark:
+                    addition = -10;
+                    break;
+                case Brightness.Dark:
+                    addition = -1;
+                    break;
+                case Brightness.Bright:
+                    addition = 1;
+                    break;
+                case Brightness.ReallyBright:
+                    addition = 10;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(brightness), brightness, null);
+            }
+            try
+            {
+                var color = Color.FromArgb(m_chosenColor.R + addition,
+                    m_chosenColor.G + addition, m_chosenColor.B + addition);
+                m_chosenColor = color;
+                UpdateChosenColor();
+                RefreshAllPanels();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                MessageBox.Show("you reached the limit");
+            }
+        }
+        private void BtnDarker_Click(object sender, EventArgs e)
+        {
+            ChangeColorLightness(Brightness.ReallyDark);
+        }
+        private void BtnBrighter_Click(object sender, EventArgs e)
+        {
+            ChangeColorLightness(Brightness.ReallyBright);
+        }
+        private void BtnLittleBitDarker_Click(object sender, EventArgs e)
+        {
+            ChangeColorLightness(Brightness.Bright);
+        }
+        private void BtnLittleBitBrighter_Click(object sender, EventArgs e)
+        {
+            ChangeColorLightness(Brightness.Bright);
+        }
     }
 }
