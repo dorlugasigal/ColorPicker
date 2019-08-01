@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
@@ -27,7 +26,6 @@ namespace ColorPicker
         ColorBlend m_colorBlend;
         int m_rainbowCurrentColorHeight;
 
-        BackgroundWorker c;
 
         #endregion
 
@@ -340,37 +338,27 @@ namespace ColorPicker
         }
         private enum Brightness
         {
-            ReallyDark,
             Dark,
             Bright,
-            ReallyBright
         }
 
 
         private void ChangeColorLightness(Brightness brightness)
         {
-            int addition;
+            Color color;
             switch (brightness)
             {
-                case Brightness.ReallyDark:
-                    addition = -10;
-                    break;
                 case Brightness.Dark:
-                    addition = -1;
+                    color = ControlPaint.Dark(m_chosenColor, 0.001f);
                     break;
                 case Brightness.Bright:
-                    addition = 1;
-                    break;
-                case Brightness.ReallyBright:
-                    addition = 10;
+                    color = ControlPaint.Light(m_chosenColor, 0.1f);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(brightness), brightness, null);
             }
             try
             {
-                var color = Color.FromArgb(m_chosenColor.R + addition,
-                    m_chosenColor.G + addition, m_chosenColor.B + addition);
                 m_chosenColor = color;
                 UpdateChosenColor();
                 RefreshAllPanels();
@@ -381,17 +369,10 @@ namespace ColorPicker
                 MessageBox.Show("you reached the limit");
             }
         }
-        private void BtnDarker_Click(object sender, EventArgs e)
-        {
-            ChangeColorLightness(Brightness.ReallyDark);
-        }
-        private void BtnBrighter_Click(object sender, EventArgs e)
-        {
-            ChangeColorLightness(Brightness.ReallyBright);
-        }
+
         private void BtnLittleBitDarker_Click(object sender, EventArgs e)
         {
-            ChangeColorLightness(Brightness.Bright);
+            ChangeColorLightness(Brightness.Dark);
         }
         private void BtnLittleBitBrighter_Click(object sender, EventArgs e)
         {
