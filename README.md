@@ -56,9 +56,11 @@ Please make sure to update tests as appropriate.
 - [x] Pick a color from the mouse Pointer, this works with multiple screens also
 - [x] Middle mouse click on the top panel would relocate the window in its initial location
 - [x] opening the application multiple times results in shaking the window of the initial window
+- [x] change to brightness of the color
 
 ## TO-DO:
 - [x] change the gradient color when selecting a color with the pick tool
+- [x] add feature to change the brightness of the color
 
 
 ## License
