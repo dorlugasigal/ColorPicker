@@ -143,7 +143,7 @@
             this.tableLayout.ColumnCount = 3;
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.06667F));
             this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.93333F));
-            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 114F));
+            this.tableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
             this.tableLayout.Controls.Add(this.lblLight, 0, 5);
             this.tableLayout.Controls.Add(this.txtRGBColorCode, 1, 6);
             this.tableLayout.Controls.Add(this.txtAlpha, 2, 4);
@@ -198,7 +198,7 @@
             this.txtRGBColorCode.Location = new System.Drawing.Point(63, 421);
             this.txtRGBColorCode.Margin = new System.Windows.Forms.Padding(2);
             this.txtRGBColorCode.Name = "txtRGBColorCode";
-            this.txtRGBColorCode.Size = new System.Drawing.Size(296, 32);
+            this.txtRGBColorCode.Size = new System.Drawing.Size(295, 32);
             this.txtRGBColorCode.TabIndex = 19;
             // 
             // txtAlpha
@@ -206,10 +206,10 @@
             this.txtAlpha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAlpha.Enabled = false;
             this.txtAlpha.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAlpha.Location = new System.Drawing.Point(363, 351);
+            this.txtAlpha.Location = new System.Drawing.Point(362, 351);
             this.txtAlpha.Margin = new System.Windows.Forms.Padding(2);
             this.txtAlpha.Name = "txtAlpha";
-            this.txtAlpha.Size = new System.Drawing.Size(111, 32);
+            this.txtAlpha.Size = new System.Drawing.Size(112, 32);
             this.txtAlpha.TabIndex = 14;
             // 
             // txtBlue
@@ -217,10 +217,10 @@
             this.txtBlue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtBlue.Enabled = false;
             this.txtBlue.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBlue.Location = new System.Drawing.Point(363, 316);
+            this.txtBlue.Location = new System.Drawing.Point(362, 316);
             this.txtBlue.Margin = new System.Windows.Forms.Padding(2);
             this.txtBlue.Name = "txtBlue";
-            this.txtBlue.Size = new System.Drawing.Size(111, 32);
+            this.txtBlue.Size = new System.Drawing.Size(112, 32);
             this.txtBlue.TabIndex = 13;
             // 
             // txtGreen
@@ -228,20 +228,20 @@
             this.txtGreen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtGreen.Enabled = false;
             this.txtGreen.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGreen.Location = new System.Drawing.Point(363, 281);
+            this.txtGreen.Location = new System.Drawing.Point(362, 281);
             this.txtGreen.Margin = new System.Windows.Forms.Padding(2);
             this.txtGreen.Name = "txtGreen";
-            this.txtGreen.Size = new System.Drawing.Size(111, 32);
+            this.txtGreen.Size = new System.Drawing.Size(112, 32);
             this.txtGreen.TabIndex = 12;
             // 
             // pnlRainbowColor
             // 
             this.pnlRainbowColor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlRainbowColor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlRainbowColor.Location = new System.Drawing.Point(363, 2);
+            this.pnlRainbowColor.Location = new System.Drawing.Point(362, 2);
             this.pnlRainbowColor.Margin = new System.Windows.Forms.Padding(2);
             this.pnlRainbowColor.Name = "pnlRainbowColor";
-            this.pnlRainbowColor.Size = new System.Drawing.Size(111, 240);
+            this.pnlRainbowColor.Size = new System.Drawing.Size(112, 240);
             this.pnlRainbowColor.TabIndex = 0;
             this.pnlRainbowColor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlRainbowColor_Paint);
             this.pnlRainbowColor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlRainbowColor_MouseClick);
@@ -253,7 +253,7 @@
             this.pnlGradient.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlGradient.Location = new System.Drawing.Point(3, 3);
             this.pnlGradient.Name = "pnlGradient";
-            this.pnlGradient.Size = new System.Drawing.Size(355, 238);
+            this.pnlGradient.Size = new System.Drawing.Size(354, 238);
             this.pnlGradient.TabIndex = 1;
             this.pnlGradient.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGradient_Paint);
             this.pnlGradient.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlGradient_MouseClick);
@@ -314,7 +314,7 @@
             this.trackBarRed.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarRed.Maximum = 255;
             this.trackBarRed.Name = "trackBarRed";
-            this.trackBarRed.Size = new System.Drawing.Size(296, 31);
+            this.trackBarRed.Size = new System.Drawing.Size(295, 31);
             this.trackBarRed.TabIndex = 7;
             this.trackBarRed.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarRed.Scroll += new System.EventHandler(this.trackBars_Scroll);
@@ -327,7 +327,7 @@
             this.trackBarGreen.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarGreen.Maximum = 255;
             this.trackBarGreen.Name = "trackBarGreen";
-            this.trackBarGreen.Size = new System.Drawing.Size(296, 31);
+            this.trackBarGreen.Size = new System.Drawing.Size(295, 31);
             this.trackBarGreen.TabIndex = 8;
             this.trackBarGreen.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarGreen.Scroll += new System.EventHandler(this.trackBars_Scroll);
@@ -340,7 +340,7 @@
             this.trackBarBlue.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarBlue.Maximum = 255;
             this.trackBarBlue.Name = "trackBarBlue";
-            this.trackBarBlue.Size = new System.Drawing.Size(296, 31);
+            this.trackBarBlue.Size = new System.Drawing.Size(295, 31);
             this.trackBarBlue.TabIndex = 9;
             this.trackBarBlue.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarBlue.Scroll += new System.EventHandler(this.trackBars_Scroll);
@@ -353,7 +353,7 @@
             this.trackBarAlpha.Margin = new System.Windows.Forms.Padding(2);
             this.trackBarAlpha.Maximum = 255;
             this.trackBarAlpha.Name = "trackBarAlpha";
-            this.trackBarAlpha.Size = new System.Drawing.Size(296, 31);
+            this.trackBarAlpha.Size = new System.Drawing.Size(295, 31);
             this.trackBarAlpha.TabIndex = 10;
             this.trackBarAlpha.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBarAlpha.Scroll += new System.EventHandler(this.trackBars_Scroll);
@@ -363,10 +363,10 @@
             this.txtRed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtRed.Enabled = false;
             this.txtRed.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRed.Location = new System.Drawing.Point(363, 246);
+            this.txtRed.Location = new System.Drawing.Point(362, 246);
             this.txtRed.Margin = new System.Windows.Forms.Padding(2);
             this.txtRed.Name = "txtRed";
-            this.txtRed.Size = new System.Drawing.Size(111, 32);
+            this.txtRed.Size = new System.Drawing.Size(112, 32);
             this.txtRed.TabIndex = 11;
             // 
             // pnlColorDisplay
@@ -410,7 +410,7 @@
             // 
             this.chkRGBA.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.chkRGBA.AutoSize = true;
-            this.chkRGBA.Location = new System.Drawing.Point(363, 428);
+            this.chkRGBA.Location = new System.Drawing.Point(362, 428);
             this.chkRGBA.Margin = new System.Windows.Forms.Padding(2);
             this.chkRGBA.Name = "chkRGBA";
             this.chkRGBA.Size = new System.Drawing.Size(56, 17);
@@ -433,7 +433,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(294, 29);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(293, 29);
             this.tableLayoutPanel1.TabIndex = 21;
             // 
             // btnLight
@@ -445,7 +445,7 @@
             this.btnLight.Location = new System.Drawing.Point(0, 0);
             this.btnLight.Margin = new System.Windows.Forms.Padding(0);
             this.btnLight.Name = "btnLight";
-            this.btnLight.Size = new System.Drawing.Size(147, 29);
+            this.btnLight.Size = new System.Drawing.Size(146, 29);
             this.btnLight.TabIndex = 1;
             this.btnLight.Text = "Light";
             this.btnLight.UseVisualStyleBackColor = false;
@@ -458,7 +458,7 @@
             this.btnDark.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDark.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDark.ForeColor = System.Drawing.Color.White;
-            this.btnDark.Location = new System.Drawing.Point(147, 0);
+            this.btnDark.Location = new System.Drawing.Point(146, 0);
             this.btnDark.Margin = new System.Windows.Forms.Padding(0);
             this.btnDark.Name = "btnDark";
             this.btnDark.Size = new System.Drawing.Size(147, 29);
