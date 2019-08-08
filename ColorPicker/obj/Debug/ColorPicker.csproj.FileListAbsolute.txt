@@ -7,4 +7,3 @@ C:\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.csproj.GenerateResourc
 C:\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.csproj.CoreCompileInputs.cache
 C:\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.exe
 C:\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.pdb
-C:\Projects\colorpicker\ColorPicker\obj\Debug\ColorPicker.csprojAssemblyReference.cache
