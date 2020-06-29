@@ -23,7 +23,7 @@ You can find a color on a gradient map and you can use it to display color by it
 </p>
 
 ## Preview
-![alt text](https://i.imgur.com/ob27Pc8.gif)
+![alt text](https://i.ibb.co/PDhB7Dv/Untitled.png)
 
 ## Usage
 
